@@ -1,0 +1,37 @@
+[
+  {
+    "message": {
+      "_": "message",
+      "id": 62914560,
+      "sender_user_id": 0,
+      "chat_id": -1001229908976,
+      "is_outgoing": true,
+      "can_be_edited": true,
+      "can_be_forwarded": true,
+      "can_be_deleted_only_for_self": false,
+      "can_be_deleted_for_all_users": true,
+      "is_channel_post": true,
+      "contains_unread_mention": false,
+      "date": 1540052310,
+      "edit_date": 0,
+      "reply_to_message_id": 0,
+      "ttl": 0,
+      "ttl_expires_in": 0,
+      "via_bot_user_id": 0,
+      "author_signature": "Alex",
+      "views": 1,
+      "media_album_id": "0",
+      "content": {
+        "_": "messageText",
+        "text": {
+          "_": "formattedText",
+          "text": "aaa",
+          "entities": []
+        }
+      },
+      "link": "https://t.me/test_tdl/60"
+    },
+    "disable_notification": true,
+    "contains_mention": false
+  }
+]
