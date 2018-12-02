@@ -1,5 +1,4 @@
 node_modules
 _td_*
-td-sources
 .DS_Store
 __kafka-offsets.json
