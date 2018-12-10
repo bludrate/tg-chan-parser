@@ -3,6 +3,8 @@ module.exports = async ( client, channelUsername ) => {
       return null;
     }
 
+    channelUsername = channelUsername.replace('https://t.me/', '');
+
     let data = await client.invoke({
       _: 'searchPublicChats',
       query: '@' + channelUsername

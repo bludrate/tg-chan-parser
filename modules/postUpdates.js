@@ -63,7 +63,9 @@ module.exports = ( client, producer ) => {
             topic: type,
             messages: JSON.stringify( payload )
           } ], ( err, data ) => {
-            console.log( err, data );
+            if ( err ) {
+              console.log( err );
+            }
           } );
         }
       }
