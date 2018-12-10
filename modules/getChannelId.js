@@ -3,12 +3,20 @@ module.exports = async ( client, channelUsername ) => {
       return null;
     }
 
-    channelUsername = channelUsername.replace('https://t.me/', '');
+    let query = '';
+
+    if ( channelUsername.indexOf('http') === 0 ) {
+      query = channelUsername;
+    } else {
+      query = 'https://t.me/' + channelUsername;
+    }
 
     let data = await client.invoke({
       _: 'searchPublicChats',
-      query: '@' + channelUsername
+      query
     });
+
+    channelUsername = channelUsername.replace('https://t.me/', '');
 
     if ( !data.chat_ids.length ) {
       return {
